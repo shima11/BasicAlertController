@@ -1,0 +1,10 @@
+framework module BasicAlertController {
+  umbrella header "BasicAlertController.h"
+
+  export *
+  module * { export * }
+}
+
+module BasicAlertController.Swift {
+    header "BasicAlertController-Swift.h"
+}

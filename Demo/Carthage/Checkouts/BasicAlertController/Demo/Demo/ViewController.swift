@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // class method
-        BasicAlertController.test()
+        let hoge = BasicAlertController()
+        //hoge.test()
         
     }
 

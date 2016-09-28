@@ -14,7 +14,7 @@
 		D453355C1D9ADBEF0043E499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D453355A1D9ADBEF0043E499 /* LaunchScreen.storyboard */; };
 		D45335671D9ADBEF0043E499 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45335661D9ADBEF0043E499 /* DemoTests.swift */; };
 		D45335721D9ADBEF0043E499 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45335711D9ADBEF0043E499 /* DemoUITests.swift */; };
-		D4CDEA0A1D9C42C9006D655B /* BasicAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CDEA041D9C4075006D655B /* BasicAlertController.framework */; };
+		D45335931D9B016F0043E499 /* BasicAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45335921D9B016F0043E499 /* BasicAlertController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		D453356D1D9ADBEF0043E499 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45335711D9ADBEF0043E499 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		D45335731D9ADBEF0043E499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4CDEA041D9C4075006D655B /* BasicAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BasicAlertController.framework; path = Carthage/Build/iOS/BasicAlertController.framework; sourceTree = "<group>"; };
+		D45335921D9B016F0043E499 /* BasicAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BasicAlertController.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CDEA0A1D9C42C9006D655B /* BasicAlertController.framework in Frameworks */,
+				D45335931D9B016F0043E499 /* BasicAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 		D45335451D9ADBEF0043E499 = {
 			isa = PBXGroup;
 			children = (
-				D4CDEA041D9C4075006D655B /* BasicAlertController.framework */,
+				D45335921D9B016F0043E499 /* BasicAlertController.framework */,
 				D45335501D9ADBEF0043E499 /* Demo */,
 				D45335651D9ADBEF0043E499 /* DemoTests */,
 				D45335701D9ADBEF0043E499 /* DemoUITests */,
@@ -139,7 +139,6 @@
 				D453354A1D9ADBEF0043E499 /* Sources */,
 				D453354B1D9ADBEF0043E499 /* Frameworks */,
 				D453354C1D9ADBEF0043E499 /* Resources */,
-				D4CDEA061D9C407C006D655B /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -255,24 +254,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D4CDEA061D9C407C006D655B /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-				"＄(SRCROOT)/Carthage/Build/iOS/BasicAlertController.framework",
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "＄(SRCROOT)/Carthage/Build/iOS/BasicAlertController.framework";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D453354A1D9ADBEF0043E499 /* Sources */ = {
@@ -424,10 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shimaApps.Demo;
@@ -439,10 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shimaApps.Demo;
