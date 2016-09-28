@@ -10,6 +10,7 @@
 		D453352F1D9ADB860043E499 /* BasicAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = D453352E1D9ADB860043E499 /* BasicAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D45335361D9ADB860043E499 /* BasicAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D453352B1D9ADB860043E499 /* BasicAlertController.framework */; };
 		D453353B1D9ADB860043E499 /* BasicAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453353A1D9ADB860043E499 /* BasicAlertControllerTests.swift */; };
+		D45335801D9AE56D0043E499 /* BasicAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453357F1D9AE56D0043E499 /* BasicAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D45335351D9ADB860043E499 /* BasicAlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicAlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D453353A1D9ADB860043E499 /* BasicAlertControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAlertControllerTests.swift; sourceTree = "<group>"; };
 		D453353C1D9ADB860043E499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D453357F1D9AE56D0043E499 /* BasicAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D453352E1D9ADB860043E499 /* BasicAlertController.h */,
+				D453357F1D9AE56D0043E499 /* BasicAlertController.swift */,
 				D45335301D9ADB860043E499 /* Info.plist */,
 			);
 			path = BasicAlertController;
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45335801D9AE56D0043E499 /* BasicAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 		D45335401D9ADB860043E499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shimaApps.BasicAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D45335411D9ADB860043E499 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +385,7 @@
 				D45335411D9ADB860043E499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D45335421D9ADB860043E499 /* Build configuration list for PBXNativeTarget "BasicAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +394,7 @@
 				D45335441D9ADB860043E499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

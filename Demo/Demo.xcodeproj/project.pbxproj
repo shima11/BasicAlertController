@@ -14,6 +14,7 @@
 		D453355C1D9ADBEF0043E499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D453355A1D9ADBEF0043E499 /* LaunchScreen.storyboard */; };
 		D45335671D9ADBEF0043E499 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45335661D9ADBEF0043E499 /* DemoTests.swift */; };
 		D45335721D9ADBEF0043E499 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45335711D9ADBEF0043E499 /* DemoUITests.swift */; };
+		D45335931D9B016F0043E499 /* BasicAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45335921D9B016F0043E499 /* BasicAlertController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D453356D1D9ADBEF0043E499 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45335711D9ADBEF0043E499 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		D45335731D9ADBEF0043E499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45335921D9B016F0043E499 /* BasicAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BasicAlertController.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45335931D9B016F0043E499 /* BasicAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		D45335451D9ADBEF0043E499 = {
 			isa = PBXGroup;
 			children = (
+				D45335921D9B016F0043E499 /* BasicAlertController.framework */,
 				D45335501D9ADBEF0043E499 /* Demo */,
 				D45335651D9ADBEF0043E499 /* DemoTests */,
 				D45335701D9ADBEF0043E499 /* DemoUITests */,
@@ -401,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shimaApps.Demo;
@@ -412,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shimaApps.Demo;
@@ -484,6 +490,7 @@
 				D45335781D9ADBEF0043E499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D45335791D9ADBEF0043E499 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +499,7 @@
 				D453357B1D9ADBEF0043E499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D453357C1D9ADBEF0043E499 /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +508,7 @@
 				D453357E1D9ADBEF0043E499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
