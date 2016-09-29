@@ -6,6 +6,8 @@ BasicAlertController is simple UIAlertController
 make Cartfile
 
     github "shima11/BasicAlertController"
+    
+terminal
 
     carthage update
 
@@ -18,7 +20,9 @@ make Podfile
       pod ‘BasicAlertController’, :git => ‘https://github.com/shima11/BasicAlertController.git’
     end
 
-    pod update
+terminal
+
+    pod install
 
 ## How to use
 coming soon ...
